@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <!-- boxicon -->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- swiper cdn link -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">O Anime</a>
+      </div>
+      <div class="icon">
+        <i class='bx bx-search' id="search-btn"></i>
+        <i class='bx bxs-user' id="user-btn" ></i>
+      </div>
+
+      <ul class="user-menu" id="user-menu">
+        <li><a href="#">會員管理</a></li>
+        <li><a href="video-list.html">所有動畫</a></li>
+        <li><a href="#">我的最愛</a></li>
+        <li><a href="#">問題回報</a></li>
+        <li><a href="#" id="logout">會員登出</a></li>
+      </ul>
+
+      <div class="search-form" id="search">
+        <form>
+          <input type="text" name="videoName">
+          <button type="submit">
+            <i class='bx bx-search' id="search-btn"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+  
+  <div class="login-form" id="login">
+    <form>
+      <i class='bx bx-x' id="close-btn"></i>
+      <h2>登入</h2>
+      <input type="text" placeholder="請輸入帳號" class="input"/>
+      <p class="login-errorMessage">查無此帳號</p>
+      <input type="password" placeholder="請輸入密碼" class="input"/>
+      <p class="login-errorMessage">密碼錯誤</p>
+      <a class="login-btn" id="login-btn">登入</a>
+      <a href="#">忘記密碼？</a>
+      <a href="#">註冊</a>
+    <form>
+  </div>
+
+
+
+
+  <%- contents %>
+
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <ul class="icons">
+        <li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+        <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+        <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+        <li><a href="#"><i class='bx bxl-github' ></i></a></li>
+        <li><a href="#"><i class='bx bxl-youtube' ></i></a></li>
+      </ul>
+      <p> &copy; Copyright @ 2022 by O Anime | All Rights Reserved</p>
+      <p>此作品為前端作品 並無作為商業利益所用</p>
+    </div>
+  </footer>
+
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/jquery-3.6.0.min.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+.banner{
+    background: url("../images/banner.jpg") 0 30%;
+    background-size: cover;
+    height: 100vh;
+    .liner-cover{
+        background: linear-gradient(90deg, rgba(0,0,0,0),rgba(0,0,0,1) 70%);
+        height: 100%;
+    }
+    .container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .content{
+        color: #fff;
+        text-align: center;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sub-title{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 466px;
+        justify-content: center;
+        margin-bottom: 40px;
+        gap: 10px;
+    }
+    p{
+        font-size: 32px;
+        line-height: 43.58px;
+        font-weight: 700;
+        letter-spacing: 3.2px;
+    }
+    .bt{
+        padding: 13px 142px;
+        background: var(--main-color);
+        color: #fff;
+        line-height: 21.8px;
+        border-radius: 20px;
+        &:hover{
+            background: var(--dark-main-color);
+        }
+    }
+    @include mobile{
+        background-size: 300%;
+        background-position: 43% 35%;
+        .container{
+            align-items: center;
+        }
+        .sub-title{
+            gap: 0 10px;
+            margin-bottom: 30px;
+        }
+        p{
+            font-size: 24px;
+            line-height: 32px;
+        }
+        .bt{
+            display: flex;
+            padding: 10px 0;
+            width: 70%;
+            justify-content: center;
+        }
+    }
+}
