@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        O-Anime
+    </title>
+    <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">O Anime</a>
+            </div>
+            <div class="icon">
+                <i class='bx bx-search' id="search-btn"></i>
+                <i class='bx bxs-user' id="user-btn"></i>
+            </div>
+
+            <ul class="user-menu" id="user-menu">
+                <li><a href="#">會員管理</a></li>
+                <li><a href="video-list.html">所有動畫</a></li>
+                <li><a href="#">我的最愛</a></li>
+                <li><a href="#">問題回報</a></li>
+                <li><a href="#" id="logout">會員登出</a></li>
+            </ul>
+
+            <div class="search-form" id="search">
+                <form>
+                    <input type="text" name="videoName">
+                    <button type="submit">
+                        <i class='bx bx-search' id="search-btn"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <div class="login-form" id="login">
+        <form>
+            <i class='bx bx-x' id="close-btn"></i>
+            <h2>登入</h2>
+            <input type="text" placeholder="請輸入帳號" class="input" />
+            <p class="login-errorMessage">查無此帳號</p>
+            <input type="password" placeholder="請輸入密碼" class="input" />
+            <p class="login-errorMessage">密碼錯誤</p>
+            <a class="login-btn" id="login-btn">登入</a>
+            <a href="#">忘記密碼？</a>
+            <a href="sign-up.html">註冊</a>
+            <form>
+    </div>
+
+    <!-- advertise section -->
+    <div id="carouselExampleIndicators" class="carousel slide advertise" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active box">
+                <img src="assets/images/ad2a.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item box">
+                <img src="assets/images/ad3.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- advertise section -->
+
+
+
+    
+<div class="video-list">
+    <div class="container">
+        <ul class="tagbar">
+            <li><a href="#" class="active">所有動畫</a></li>
+            <li><a href="#">冒險</a></li>
+            <li><a href="#">戀愛</a></li>
+            <li><a href="#">校園</a></li>
+            <li><a href="#">幽默</a></li>
+            <li><a href="#">穿越</a></li>
+            <li><a href="#">魔幻</a></li>
+            <li><a href="#">恐怖</a></li>
+        </ul>
+        <ul class="allvideos">
+            <li><a href="#">
+                <div class="image">
+                    <img src="assets/images/anime01.jpg" alt="">
+                </div>
+                <div class="title">
+                    <h3>SPY×FAMILY 間諜家家酒</h3>
+                    <p>共12集</p>
+                </div>
+            </a></li>
+
+            <li><a href="#">
+                <div class="image">
+                    <img src="assets/images/anime02.jpg" alt="">
+                </div>
+                <div class="title">
+                    <h3>入間同學入魔了 第二季</h3>
+                    <p>共12集</p>
+                </div>
+            </a></li>
+
+            <li><a href="#">
+                <div class="image">
+                    <img src="assets/images/anime03.jpg" alt="">
+                </div>
+                <div class="title">
+                    <h3>世界頂尖的暗殺者轉生為異世界貴族</h3>
+                    <p>共12集</p>
+                </div>
+            </a></li>
+
+            <li><a href="#">
+                <div class="image">
+                    <img src="assets/images/anime04.jpg" alt="">
+                </div>
+                <div class="title">
+                    <h3>失格紋的最強賢者</h3>
+                    <p>共12集</p>
+                </div>
+            </a></li>
+
+            <li><a href="#">
+                <div class="image">
+                    <img src="assets/images/anime05.jpg" alt="">
+                </div>
+                <div class="title">
+                    <h3>前輩有夠煩</h3>
+                    <p>共12集</p>
+                </div>
+            </a></li>
+
+            <li><a href="#">
+                <div class="image">
+                    <img src="assets/images/anime06.jpg" alt="">
+                </div>
+                <div class="title">
+                    <h3>陰陽眼見子</h3>
+                    <p>共12集</p>
+                </div>
+            </a></li>
+
+            <li><a href="#">
+                <div class="image">
+                    <img src="assets/images/anime07.jpg" alt="">
+                </div>
+                <div class="title">
+                    <h3>路人超能 100 第二季</h3>
+                    <p>共12集</p>
+                </div>
+            </a></li>
+
+            <li><a href="#">
+                <div class="image">
+                    <img src="assets/images/anime08.jpg" alt="">
+                </div>
+                <div class="title">
+                    <h3>輝夜姬想讓人告白 ー超級浪漫ー</h3>
+                    <p>共12集</p>
+                </div>
+            </a></li>
+
+            <li><a href="#">
+                <div class="image">
+                    <img src="assets/images/anime09.jpg" alt="">
+                </div>
+                <div class="title">
+                    <h3>擅長捉弄人的高木同學第三季</h3>
+                    <p>共12集</p>
+                </div>
+            </a></li>
+
+            <li><a href="#">
+                <div class="image">
+                    <img src="assets/images/anime10.jpg" alt="">
+                </div>
+                <div class="title">
+                    <h3>爆肝工程師的異世界狂想曲</h3>
+                    <p>共12集</p>
+                </div>
+            </a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+        <footer class="footer">
+            <div class="container">
+                <ul class="icons">
+                    <li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-github'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
+                </ul>
+                <p> &copy; Copyright @ 2022 by O Anime | All Rights Reserved</p>
+                <p>此作品為前端作品 並無作為商業利益所用</p>
+            </div>
+        </footer>
+
+
+        <script src="./assets/js/vendors.js"></script>
+        <script src="./assets/js/jquery-3.6.0.min.js"></script>
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"></script>
+        <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
