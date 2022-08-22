@@ -37,6 +37,19 @@ $(document).ready(function () {
   });
 
 
+  $('#month-label').click(function (e) { 
+    e.preventDefault();
+    $('#month-cover').removeClass('d-none');
+    $('#year-cover').addClass('d-none');
+    $("input[type=radio]")[0].checked = true;
+  });
+  $('#year-label').click(function (e) { 
+    e.preventDefault();
+    $('#month-cover').addClass('d-none');
+    $('#year-cover').removeClass('d-none');
+    $("input[type=radio]")[1].checked = true;
+  });
+
 
 
 

@@ -3,10 +3,14 @@
 @import 'mixin';
 @import 'base';
 @import 'layout/navbar';
+@import 'layout/ad';
 
 @import 'index/banner';
 @import 'index/intro';
 @import 'index/platform';
 @import 'index/subscribe';
+
+@import 'video-list';
+@import 'sign-up';
 
 @import 'layout/footer';
